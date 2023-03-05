@@ -1,0 +1,22 @@
+site:
+  title: Implicated
+  url: https://docs.implicated.com
+  start_page: asciidoc::index.adoc
+content:
+  sources:
+    - url: ../asciidoc
+      start_paths:
+        - docs
+      branches: 'master'
+ui:
+  bundle:
+    url: ui-bundle.zip
+    snapshot: true
+  supplemental_files:
+    - path: ui.yml
+      contents: |
+        static_files:
+        - .nojekyll
+    - path: .nojekyll
+output:
+  clean: true

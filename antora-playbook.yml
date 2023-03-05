@@ -1,0 +1,16 @@
+site:
+  title: Implicated
+  url: https://docs.implicated.com
+  start_page: asciidoc::index.adoc
+content:
+  sources:
+    - url: ../asciidoc
+      start_paths:
+        - docs
+      branches: HEAD
+ui:
+  bundle:
+    url: ui-bundle.zip
+    snapshot: true
+output:
+  clean: true
